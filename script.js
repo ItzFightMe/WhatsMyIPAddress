@@ -1,4 +1,4 @@
-document.getElementById('check-ip-btn').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
     fetch('https://api.ipify.org?format=json')
         .then(response => response.json())
         .then(data => {
